@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Extension Popup</title>
+    <script src="popup.js" defer></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 10px;
+        width: 200px;
+      }
+      .success-message {
+        color: green;
+        margin-top: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="file"] {
+        margin-bottom: 10px;
+      }
+      button {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Extension Settings</h3>
+    <label for="imageUpload">Upload an Image:</label>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <button id="saveBtn">Save</button>
+    <div class="success-message" id="message"></div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "My Image Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Upload an image in the extension and add 'pin-like' buttons to images on the page.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage", 
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
