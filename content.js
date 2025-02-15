@@ -5,7 +5,7 @@ const MIN_WIDTH = 100;
 const MIN_HEIGHT = 100;
 
 // API key for the try-on service
-const FAL_KEY = 'cdcad451-0c07-4d63-b863-8200e2c14481:7f139e4c457371dc5cd4dccd461a4024';
+const FAL_KEY = '';
 
 // Utility: Returns a promise that resolves after a given delay (ms)
 function delay(ms) {
